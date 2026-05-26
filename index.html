@@ -24,7 +24,7 @@
       };
     </script>
   </head>
-  <body class="min-h-screen bg-[#f5f5ff] font-sans antialiased">
+  <body class="min-h-screen bg-[#F6F6FB] font-sans antialiased">
     <header class="px-8 pt-8">
       <nav
         class="mx-auto flex w-full max-w-[86rem] items-center justify-between rounded-full border border-slate-200/80 bg-white px-8 py-4 shadow-sm"
@@ -40,16 +40,32 @@
         </a>
         <ul class="flex items-center gap-10 text-sm font-medium">
           <li>
-            <a href="#" class="text-slate-800 hover:text-indigo-600">Home</a>
+            <a
+              href="#"
+              class="text-[#1A1A2C] transition hover:text-[#5E44FF] hover:underline underline-offset-4"
+              >Home</a
+            >
           </li>
           <li>
-            <a href="#" class="text-slate-800 hover:text-indigo-600">Features</a>
+            <a
+              href="#"
+              class="text-[#1A1A2C] transition hover:text-[#5E44FF] hover:underline underline-offset-4"
+              >Features</a
+            >
           </li>
           <li>
-            <a href="#" class="text-slate-800 hover:text-indigo-600">Pricing</a>
+            <a
+              href="#"
+              class="text-[#1A1A2C] transition hover:text-[#5E44FF] hover:underline underline-offset-4"
+              >Pricing</a
+            >
           </li>
           <li>
-            <a href="#" class="text-slate-800 hover:text-indigo-600">Contact</a>
+            <a
+              href="#"
+              class="text-[#1A1A2C] transition hover:text-[#5E44FF] hover:underline underline-offset-4"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
@@ -74,7 +90,7 @@
 
       <a
         href="#"
-        class="inline-block rounded-full bg-slate-900 px-8 py-3.5 text-base font-semibold text-white shadow-md transition hover:bg-slate-800"
+        class="inline-flex w-[187px] items-center justify-center rounded-2xl bg-[#1A1A2C] px-9 py-4 text-base font-semibold text-white shadow-md transition hover:bg-[#5F5F76] focus:bg-[#35354D] focus:outline-none focus:ring-4 focus:ring-[#5F5F76]"
       >
         Start Free Trial
       </a>
@@ -146,71 +162,100 @@
         </article>
       </div>
     </section>
+
+    <section class="px-8 pb-24">
+      <div class="mx-auto flex max-w-[86rem] justify-center">
+        <div class="w-full max-w-4xl rounded-3xl border border-slate-200/60 bg-white p-12 shadow-sm">
+          <h2 class="mb-10 text-center text-5xl font-extrabold tracking-tight text-[#1A1A2C]">
+            Get in Touch
+          </h2>
+
+          <form class="space-y-6">
+            <div>
+              <label for="name" class="mb-2 block text-sm font-medium text-[#1A1A2C]"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                placeholder="John Doe"
+                class="w-full rounded-2xl border border-[#E0E0ED] p-3 text-[#1A1A2C] placeholder-slate-400 transition hover:border-[#B5A9FF] focus:border-[#5E44FF] focus:outline-none"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="mb-2 block text-sm font-medium text-[#1A1A2C]"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                placeholder="john@example.com"
+                class="w-full rounded-2xl border border-[#E0E0ED] p-3 text-[#1A1A2C] placeholder-slate-400 transition hover:border-[#B5A9FF] focus:border-[#5E44FF] focus:outline-none"
+              />
+            </div>
+
+            <div>
+              <label for="message" class="mb-2 block text-sm font-medium text-[#1A1A2C]"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Your message..."
+                class="w-full resize-none rounded-2xl border border-[#E0E0ED] p-3 text-[#1A1A2C] placeholder-slate-400 transition hover:border-[#B5A9FF] focus:border-[#5E44FF] focus:outline-none"
+              ></textarea>
+            </div>
+
+            <div class="pt-2">
+              <button
+                type="submit"
+                class="mx-auto flex w-[589px] max-w-full items-center justify-center rounded-2xl bg-[#1A1A2C] px-9 py-4 text-white transition hover:bg-[#5F5F76] focus:bg-[#35354D] focus:outline-none focus:ring-4 focus:ring-[#5F5F76]"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="px-8 pb-12">
+      <div
+        class="mx-auto flex max-w-[86rem] items-center justify-between gap-4 border-t border-slate-200/60 pt-8 text-sm font-medium text-slate-500"
+      >
+        <div>Acme productivity app ©2024</div>
+        <ul class="flex items-center gap-8">
+          <li>
+            <a
+              href="#"
+              class="text-[#1A1A2C] transition hover:text-[#5E44FF] hover:underline underline-offset-4"
+              >FAQ</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-[#1A1A2C] transition hover:text-[#5E44FF] hover:underline underline-offset-4"
+              >Terms</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-[#1A1A2C] transition hover:text-[#5E44FF] hover:underline underline-offset-4"
+              >AI Policy</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-[#1A1A2C] transition hover:text-[#5E44FF] hover:underline underline-offset-4"
+              >Pricing</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
-<section class="px-8 pb-24">
-  <div class="mx-auto max-w-[86rem] flex justify-center">
-    <div class="w-full max-w-4xl bg-white rounded-[2rem] p-12 sm:p-16 shadow-sm border border-slate-100 flex flex-col items-center">
-      
-      <h2 class="text-4xl sm:text-[42px] font-bold text-slate-900 mb-10 tracking-tight">
-        Get in Touch
-      </h2>
-
-      <form class="w-full max-w-2xl space-y-6 text-left">
-        <div>
-          <label for="name" class="block text-sm font-medium text-slate-500 mb-2">Name</label>
-          <input 
-            type="text" 
-            id="name" 
-            placeholder="John Doe" 
-            class="w-full rounded-xl border border-slate-200 bg-white px-5 py-3 text-slate-800 placeholder-slate-400 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 transition-all"
-          />
-        </div>
-
-        <div>
-          <label for="email" class="block text-sm font-medium text-slate-500 mb-2">Email</label>
-          <input 
-            type="email" 
-            id="email" 
-            placeholder="john@example.com" 
-            class="w-full rounded-xl border border-slate-200 bg-white px-5 py-3 text-slate-800 placeholder-slate-400 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 transition-all"
-          />
-        </div>
-
-        <div>
-          <label for="message" class="block text-sm font-medium text-slate-500 mb-2">Message</label>
-          <textarea 
-            id="message" 
-            rows="4" 
-            placeholder="Your message..." 
-            class="w-full rounded-xl border border-slate-200 bg-white px-5 py-3 text-slate-800 placeholder-slate-400 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 transition-all resize-none"
-          ></textarea>
-        </div>
-
-        <div class="pt-2">
-          <button 
-            type="submit" 
-            class="w-full rounded-xl bg-[#1e1b29] py-4 text-center font-semibold text-white shadow-md hover:bg-[#2a2638] transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-          >
-            Submit
-          </button>
-        </div>
-      </form>
-
-    </div>
-  </div>
-</section>
-
-<footer class="px-8 pb-12">
-  <div class="mx-auto flex max-w-[86rem] flex-col sm:flex-row items-center justify-between gap-4 border-t border-slate-200/60 pt-8 text-sm font-medium text-slate-500">
-    <div>
-      Acme productivity app ©2024
-    </div>
-    <ul class="flex items-center gap-8 text-slate-900">
-      <li><a href="#" class="hover:text-indigo-600 transition-colors">FAQ</a></li>
-      <li><a href="#" class="hover:text-indigo-600 transition-colors">Terms</a></li>
-      <li><a href="#" class="hover:text-indigo-600 transition-colors">AI Policy</a></li>
-      <li><a href="#" class="hover:text-indigo-600 transition-colors">Pricing</a></li>
-    </ul>
-  </div>
-</footer>

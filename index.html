@@ -6,8 +6,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
-    <!-- Start Coding Here -->
+  <body class="min-h-screen bg-[#f5f5ff] font-sans antialiased">
+    <header class="px-8 pt-8">
+      <nav
+        class="mx-auto flex w-full max-w-[86rem] items-center justify-between rounded-full border border-slate-200/80 bg-white px-8 py-4 shadow-sm"
+      >
+        <a href="#" class="text-xl font-bold text-slate-900">
+          <span class="relative inline-block pr-1">
+            Acme
+            <span
+              class="absolute -right-0 top-[7px] h-[4.5px] w-[4.5px]   rounded-full bg-indigo-600"
+              aria-hidden="true"
+            ></span>
+          </span>
+        </a>
+        <ul class="flex items-center gap-10 text-sm font-medium">
+          <li>
+            <a href="#" class="text-slate-800 hover:text-indigo-600">Home</a>
+          </li>
+          <li>
+            <a href="#" class="text-slate-800 hover:text-indigo-600">Features</a>
+          </li>
+          <li>
+            <a href="#" class="text-slate-800 hover:text-indigo-600">Pricing</a>
+          </li>
+          <li>
+            <a href="#" class="text-slate-800 hover:text-indigo-600">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex flex-col items-center px-8 pb-24 pt-20 text-center">
+      <span
+        class="mb-8 inline-flex items-center gap-1.5 rounded-full bg-[#f3e8ff] px-4 py-1.5 text-[16px] font-medium text-indigo-600"
+      >
+        <span aria-hidden="true">🌈</span>
+        Acme Productivity App
+      </span>
+
+      <h1 class="mb-6 text-[90px] font-extrabold leading-tight tracking-tight text-slate-900">
+        Boost Your
+        <span class="text-indigo-600">Product</span><span class="text-slate-900">ivity</span>
+      </h1>
+
+      <h3 class="mb-10 whitespace-nowrap text-2xl font-semibold text-slate-800">
+        Streamline your workflow with our all-in-one productivity app.
+      </h3>
+
+      <a
+        href="#"
+        class="inline-block rounded-full bg-slate-900 px-8 py-3.5 text-base font-semibold text-white shadow-md transition hover:bg-slate-800"
+      >
+        Start Free Trial
+      </a>
+    </main>
+
+    <section class="px-8 pb-24">
+      <div class="mx-auto flex max-w-[86rem] gap-5">
+        <article
+          class="flex min-w-0 flex-1 flex-col gap-4 rounded-3xl bg-[#DBEAFE] p-10 text-left"
+        >
+          <div
+            class="flex h-14 w-14 items-center justify-center rounded-2xl bg-white"
+          >
+            <img
+              src="assets/icons/streamlined-workflows.png"
+              alt=""
+              class="h-7 w-7 object-contain"
+            />
+          </div>
+          <h3 class="text-2xl font-semibold leading-tight tracking-tight text-slate-900">
+            Streamlined Workflows
+          </h3>
+          <p class="leading-relaxed text-[16px] font-medium text-zinc-600">
+            Automate repetitive tasks and focus on high-impact work with our
+            powerful productivity features.
+          </p>
+        </article>
+
+        <article
+          class="flex min-w-0 flex-1 flex-col gap-4 rounded-3xl bg-[#E0E7FF] p-10 text-left"
+        >
+          <div
+            class="flex h-14 w-14 items-center justify-center rounded-2xl bg-white"
+          >
+            <img
+              src="assets/icons/blazing-fast-performance.png"
+              alt=""
+              class="h-7 w-7 object-contain"
+            />
+          </div>
+          <h3 class="text-2xl font-semibold leading-tight tracking-tight text-slate-900">
+            Blazing Fast Performance
+          </h3>
+          <p class="leading-relaxed text-[16px] font-medium text-zinc-600">
+            Experience lightning-fast performance and instant responsiveness with
+            our cutting-edge technology.
+          </p>
+        </article>
+
+        <article
+          class="flex min-w-0 flex-1 flex-col gap-4 rounded-3xl bg-[#F3E8FF] p-10 text-left"
+        >
+          <div
+            class="flex h-14 w-14 items-center justify-center rounded-2xl bg-white"
+          >
+            <img
+              src="assets/icons/intuitive-interface.png"
+              alt=""
+              class="h-7 w-7 object-contain"
+            />
+          </div>
+          <h3 class="text-2xl font-semibold leading-tight tracking-tight text-slate-900">
+            Intuitive Interface
+          </h3>
+          <p class="leading-relaxed text-[16px] font-medium text-zinc-600">
+            Our user-friendly interface makes it easy for anyone to streamline
+            their workflow.
+          </p>
+        </article>
+      </div>
+    </section>
   </body>
 </html>
